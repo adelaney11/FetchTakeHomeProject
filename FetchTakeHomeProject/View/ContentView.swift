@@ -36,9 +36,11 @@ struct ContentView: View {
                 } else {
                     List {
                         ForEach(viewModel.recipes) { recipe in
-                            NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
-                                RecipeRowView(recipe: recipe)
-                            }
+                            RecipeRowView(recipe: recipe)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    viewModel.selectedRecipe = recipe
+                                }
                         }
                         .transition(.opacity)
                     }
@@ -47,6 +49,9 @@ struct ContentView: View {
                         try? await Task.sleep(nanoseconds: 500_000_000)
                         await viewModel.loadRecipes()
                     }
+                    .sheet(item: $viewModel.selectedRecipe) { recipe in
+                        RecipeDetailView(recipe: recipe)
+                    }
                 }
             }
             .navigationTitle("Recipes")
@@ -54,13 +59,6 @@ struct ContentView: View {
                 if viewModel.recipes.isEmpty {
                     await viewModel.loadRecipes()
                 }
-            }
-            .alert(item: $viewModel.errorWrapper) { errorWrapper in
-                Alert(
-                    title: Text("Error"),
-                    message: Text(errorWrapper.message),
-                    dismissButton: .default(Text("OK"))
-                )
             }
         }
     }

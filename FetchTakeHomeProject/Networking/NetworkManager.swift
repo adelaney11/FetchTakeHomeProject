@@ -45,12 +45,10 @@ enum NetworkError: Error, LocalizedError, Equatable {
     }
 }
 
-// Add this protocol to make NetworkManager testable
 protocol NetworkManaging {
     func fetchRecipes() async throws -> [Recipe]
 }
 
-// Update NetworkManager to conform to the protocol
 class NetworkManager: NetworkManaging {
     static let shared = NetworkManager()
     
@@ -94,10 +92,8 @@ struct RecipeResponse: Decodable {
     let recipes: [Recipe]
 }
 
-// Protocol for URLSession to make it mockable
 protocol URLSessionProtocol {
     func data(from url: URL) async throws -> (Data, URLResponse)
 }
 
-// Extension to make URLSession conform to our protocol
 extension URLSession: URLSessionProtocol {}

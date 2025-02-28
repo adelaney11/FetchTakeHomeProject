@@ -12,6 +12,7 @@ class RecipeListViewModel: ObservableObject {
     @Published var recipes: [Recipe] = []
     @Published var errorWrapper: ErrorWrapper?
     @Published var isLoading = false
+    @Published var selectedRecipe: Recipe? = nil
     
     private let networkManager: NetworkManaging
     

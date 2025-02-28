@@ -3,12 +3,9 @@
 # Project Overview
 A Swift application that fetches and displays recipe data, featuring a clean UI with recipe listings and detailed views.
 
-| :---:   | :---: |
-| ![Simulator Screenshot - iPhone 16 - 2025-02-27 at 20 36 33](https://github.com/user-attachments/assets/0edd07ba-6d89-4f1e-ae71-db62958a18bb) | ![Simulator Screenshot - iPhone 16 - 2025-02-27 at 20 36 18](https://github.com/user-attachments/assets/65681e8b-60f7-438e-bae2-1f558e864545) |
+<img src="https://github.com/user-attachments/assets/65681e8b-60f7-438e-bae2-1f558e864545" width="200"/>
 
-
-
-
+<img src="https://github.com/user-attachments/assets/0edd07ba-6d89-4f1e-ae71-db62958a18bb" width="200"/>
 
 # Focus Areas
 I prioritized implementing robust networking and image caching systems. These components are critical for performance and user experience in data-driven applications. While I'm comfortable with UI development, I chose to challenge myself in these areas to strengthen my skills in handling asynchronous operations and memory management.

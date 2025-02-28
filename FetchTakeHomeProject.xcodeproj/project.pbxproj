@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		71AD70442D6D9752002B5CD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71AD700A2D6D9400002B5CD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71AD70112D6D9400002B5CD5;
+			remoteInfo = FetchTakeHomeProject;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		71AD70122D6D9400002B5CD5 /* FetchTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71AD70402D6D9752002B5CD5 /* FetchTakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = FetchTakeHomeProject;
 			sourceTree = "<group>";
 		};
+		71AD70412D6D9752002B5CD5 /* FetchTakeHomeProjectTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FetchTakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		71AD700F2D6D9400002B5CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71AD703D2D6D9752002B5CD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				71AD70142D6D9400002B5CD5 /* FetchTakeHomeProject */,
+				71AD70412D6D9752002B5CD5 /* FetchTakeHomeProjectTests */,
 				71AD70132D6D9400002B5CD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				71AD70122D6D9400002B5CD5 /* FetchTakeHomeProject.app */,
+				71AD70402D6D9752002B5CD5 /* FetchTakeHomeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 71AD70122D6D9400002B5CD5 /* FetchTakeHomeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		71AD703F2D6D9752002B5CD5 /* FetchTakeHomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71AD70462D6D9752002B5CD5 /* Build configuration list for PBXNativeTarget "FetchTakeHomeProjectTests" */;
+			buildPhases = (
+				71AD703C2D6D9752002B5CD5 /* Sources */,
+				71AD703D2D6D9752002B5CD5 /* Frameworks */,
+				71AD703E2D6D9752002B5CD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71AD70452D6D9752002B5CD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				71AD70412D6D9752002B5CD5 /* FetchTakeHomeProjectTests */,
+			);
+			name = FetchTakeHomeProjectTests;
+			packageProductDependencies = (
+			);
+			productName = FetchTakeHomeProjectTests;
+			productReference = 71AD70402D6D9752002B5CD5 /* FetchTakeHomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					71AD70112D6D9400002B5CD5 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					71AD703F2D6D9752002B5CD5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 71AD70112D6D9400002B5CD5;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				71AD70112D6D9400002B5CD5 /* FetchTakeHomeProject */,
+				71AD703F2D6D9752002B5CD5 /* FetchTakeHomeProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		71AD70102D6D9400002B5CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71AD703E2D6D9752002B5CD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71AD703C2D6D9752002B5CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71AD70452D6D9752002B5CD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71AD70112D6D9400002B5CD5 /* FetchTakeHomeProject */;
+			targetProxy = 71AD70442D6D9752002B5CD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		71AD701E2D6D9401002B5CD5 /* Debug */ = {
@@ -260,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +376,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71AD70472D6D9752002B5CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVXLYMJ63J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamdelaney.FetchTakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTakeHomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTakeHomeProject";
+			};
+			name = Debug;
+		};
+		71AD70482D6D9752002B5CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVXLYMJ63J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamdelaney.FetchTakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTakeHomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTakeHomeProject";
 			};
 			name = Release;
 		};
@@ -319,6 +432,15 @@
 			buildConfigurations = (
 				71AD70212D6D9401002B5CD5 /* Debug */,
 				71AD70222D6D9401002B5CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71AD70462D6D9752002B5CD5 /* Build configuration list for PBXNativeTarget "FetchTakeHomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71AD70472D6D9752002B5CD5 /* Debug */,
+				71AD70482D6D9752002B5CD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
